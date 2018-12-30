@@ -108,4 +108,4 @@ HtmlWebpackPlugin中有很多配置，这个大家可以找对应的文档来查
 
 Name |	Type |	Default |	Description
 -----|-------|----------|----------------
-templateParameters	| {Boolean|Object|Function}	 | -	| Allows to overwrite the parameters used in the template
+templateParameters	| {Boolean/Object/Function}	 | -	| Allows to overwrite the parameters used in the template
