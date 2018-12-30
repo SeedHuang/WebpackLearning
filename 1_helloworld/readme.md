@@ -105,6 +105,7 @@ HtmlWebpackPlugin中有很多配置，这个大家可以找对应的文档来查
 ```
 
 它接受三种类型的参数
+
 Name |	Type |	Default |	Description
 -----|-------|----------|----------------
 templateParameters	| {Boolean|Object|Function}	 | -	| Allows to overwrite the parameters used in the template
