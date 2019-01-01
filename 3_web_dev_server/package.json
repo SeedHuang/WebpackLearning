@@ -1,0 +1,29 @@
+{
+  "name": "3_web_dev_server",
+  "version": "1.0.0",
+  "description": "show how to use web dev server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lsof -i:8080 | grep node | awk '{ print \"kill -9 \" $2}' | sh | webpack-dev-server --open --hot --progress --disableHostCheck --port 8080"
+  },
+  "keywords": [
+    "web",
+    "dev",
+    "server"
+  ],
+  "author": "Seed Huang",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
