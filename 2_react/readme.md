@@ -1,4 +1,4 @@
-# Install react
+# Lession 2: Install react
 
 > 上面说了一个怎样最简单一个webpack打包的应用跑起来的故事，他们这一次就来说说怎么把React跑起来的故事
 

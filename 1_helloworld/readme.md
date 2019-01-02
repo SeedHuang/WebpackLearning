@@ -1,4 +1,4 @@
-# Webpack4 自学笔记第一章 HelloWorld
+# Lession1: Webpack4 自学笔记第一章 HelloWorld
 
 ## Webpack4主推0配置，但是也不是什么都不配置就可以开搞的的，今天就写一个最简单的HelloWorld
 > 说个题外话，Webpack本身就是一个打包工具，webpack的理念就是将一切视作一个包进行管理，所以才叫“Web Pack”，其他的和打包无关的东西都是一些为了方便开发所附带的工具而已。
