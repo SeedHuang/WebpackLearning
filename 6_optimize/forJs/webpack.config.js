@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const AnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = function(env, argv) {
   const config = {
     entry: {
@@ -57,8 +58,16 @@ module.exports = function(env, argv) {
             chunks: 'all'
           }
         }
-      }
-    }
+      },
+      minimizer: [
+        new UglifyJSPlugin({
+          parallel: true,
+          cache: true,
+          sourceMap: true
+        })
+      ]
+    },
+    devtool: 'source-map'
   }
   return config;
 };
