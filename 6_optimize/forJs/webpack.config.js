@@ -10,7 +10,7 @@ module.exports = function(env, argv) {
     },
     output: {
       path: path.resolve(__dirname, './dist'),
-      filename: '[name][hash].js',
+      filename: '[name]_[hash].js',
       chunkFilename: '[name]_[chunkhash].js'
     },
     resolve: {
@@ -41,7 +41,7 @@ module.exports = function(env, argv) {
       }),
     ],
     optimization: {
-      runtimeChunk: {
+      runtimeChunk:{
         name: 'manifest'
       },
       splitChunks: {
