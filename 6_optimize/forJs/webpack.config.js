@@ -12,7 +12,7 @@ module.exports = function(env, argv) {
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: '[name]_[hash].js',
-      chunkFilename: '[name]_[chunkhash].js'
+      chunkFilename: '[name]_[chunkhash].js',
     },
     resolve: {
       extensions: ['.jsx', '.js']
