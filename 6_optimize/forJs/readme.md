@@ -35,6 +35,6 @@ import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
   devtool: 'source-map'
 }
 ```
-
+⚠️记得一定要启用 devtool: 'source-map'这个选项
 每个js文件都会生成一个对应的map文件，如下：
 ![map](./docImgs/map.png)

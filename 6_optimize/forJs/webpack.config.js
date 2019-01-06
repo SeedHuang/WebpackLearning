@@ -38,7 +38,7 @@ module.exports = function(env, argv) {
         chunks: ['manifest', 'react', 'common', 'about']
       }),
       new AnalyzerPlugin({
-        analyzerMode: 'none'
+        analyzerMode: 'static'
       }),
     ],
     optimization: {
