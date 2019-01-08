@@ -1,7 +1,7 @@
 {
   "name": "7_treeshaking",
   "version": "1.0.0",
-  "description": "",
+  "description": "advance optimize tree shake",
   "main": "index.js",
   "scripts": {
     "start": "lsof -i:8080 | grep node | awk '{ print \"kill -9 \" $2}' | sh | webpack --mode development --env development | webpack-dev-server --open --hot --progress --disableHostCheck --port 8080",
