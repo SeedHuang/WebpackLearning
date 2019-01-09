@@ -25,7 +25,21 @@ module.exports = function(env, argv) {
         },
         {
           test: /\.(sc|c)ss$/,
-          use: [ argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'sass-loader']
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                import: true
+              }
+            },
+            { loader: 'postcss-loader',
+              options: {
+                plugins: [require('autoprefixer')]
+              }
+            },
+            'sass-loader'
+          ]
         }
       ]
     },
@@ -43,7 +57,11 @@ module.exports = function(env, argv) {
         filename: 'about.html',
         template: './about.html',
         chunks: [ 'about']
-      })
+      }),
+      new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+      }),
     ]
   };
   return config;
