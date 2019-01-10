@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Panel from '../panel';
+import {Nav} from 'sky_components';
+
 import './index.scss'
 
-ReactDOM.render(
-  <div className="page">
+ReactDOM.render( <div className="page">
     <div className="title">This is home page</div>
     <article>
-      <Panel>This is my homepage</Panel>
+      <Nav>2222</Nav>
+       <Panel>This is my homepage</Panel>
     </article>
   </div>, document.querySelector("#container"));

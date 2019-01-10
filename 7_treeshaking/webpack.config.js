@@ -12,7 +12,7 @@ const config = {
     path: path.resolve(__dirname, './dist')
   },
   optimization: {
-    // usedExports: true,
+    usedExports: true,
     runtimeChunk: {
       name: 'manifest'
     }
